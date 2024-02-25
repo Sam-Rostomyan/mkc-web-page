@@ -1,0 +1,36 @@
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+button {
+   border: none;
+   outline: none;
+   background: none;
+   cursor: pointer;
+}
+
+.goBack {
+   width: 104px;
+   height: 33px;
+   padding: 5px 20px;
+   border: 1px solid rgb(0, 111, 244);
+   border-radius: 10px;
+   background: rgba(0, 111, 244, 0.2);
+   font-size: 20px;
+   text-align: center;
+   cursor: pointer;
+}
+
+
+.section {
+   width: 100%;
+   max-width: 1436px;
+   height: 100vh;
+   text-align: center;
+   margin: 20px auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid #01da51;
+}
