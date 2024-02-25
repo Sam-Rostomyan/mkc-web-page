@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from './components/Layout/Layout';
 import Home from './components/Home/Home';
@@ -27,12 +27,14 @@ function App() {
 
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Layout headerRef={headerRef} visibleSection={visibleSection} menus={menus} />}>
-          <Route index element={<Homepage secctions={secctions} setInView={setInView} />} />
-          <Route path='scanit' element={<ScanitPage />} />
-        </Route>
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout headerRef={headerRef} visibleSection={visibleSection} menus={menus} />}>
+            <Route index element={<Homepage secctions={secctions} setInView={setInView} />} />
+            <Route path='scanit' element={<ScanitPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
