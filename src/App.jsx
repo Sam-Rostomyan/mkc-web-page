@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/mkc-web-page/'>
         <Routes>
           <Route path="/" element={<Layout headerRef={headerRef} visibleSection={visibleSection} menus={menus} />}>
             <Route index element={<Homepage secctions={secctions} setInView={setInView} />} />

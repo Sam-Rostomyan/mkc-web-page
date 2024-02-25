@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../assets/images/logo.svg";
 import "./navbar.scss";
 
-const Navbar = ({ headerRef, visibleSection, menus, menus2 }) => {
+const Navbar = ({ headerRef, visibleSection }) => {
 
    return (
       <div className="nav-box">
