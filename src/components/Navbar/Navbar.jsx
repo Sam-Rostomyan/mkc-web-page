@@ -7,7 +7,7 @@ const Navbar = ({ headerRef, visibleSection }) => {
    return (
       <div className="nav-box">
          <nav className="nav" >
-            <a href="/#" className="nav__logo">
+            <a href="#home" className="nav__logo">
                <img className="nav__logo_img" src={logo} alt="Logo" />
                <span className="nav__logo_text">Makichyan Consulting</span>
             </a>
