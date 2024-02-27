@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mkc-web-page/static/css/main.39f307d4.css",
-    "main.js": "/mkc-web-page/static/js/main.2dcebb0f.js",
+    "main.js": "/mkc-web-page/static/js/main.87b36028.js",
     "static/media/sliderImg1.png": "/mkc-web-page/static/media/sliderImg1.aad026e9827045c34195.png",
     "static/media/scanitImg2.png": "/mkc-web-page/static/media/scanitImg2.8efe4c65f37f6a7de6da.png",
     "static/media/scanitImg1.png": "/mkc-web-page/static/media/scanitImg1.a9ad24ca8b274bfb3bcf.png",
@@ -12,10 +12,10 @@
     "static/media/headerArrowLeft.svg": "/mkc-web-page/static/media/headerArrowLeft.c5b1dc76bc7b13e9f91cd9eb75f2a7b4.svg",
     "static/media/headerArrowRight.svg": "/mkc-web-page/static/media/headerArrowRight.f79597440e08343fcc39033df2e5e82d.svg",
     "main.39f307d4.css.map": "/mkc-web-page/static/css/main.39f307d4.css.map",
-    "main.2dcebb0f.js.map": "/mkc-web-page/static/js/main.2dcebb0f.js.map"
+    "main.87b36028.js.map": "/mkc-web-page/static/js/main.87b36028.js.map"
   },
   "entrypoints": [
     "static/css/main.39f307d4.css",
-    "static/js/main.2dcebb0f.js"
+    "static/js/main.87b36028.js"
   ]
 }
