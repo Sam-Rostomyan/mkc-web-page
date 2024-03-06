@@ -65,10 +65,11 @@
          text-wrap: nowrap;
          border-bottom-left-radius: 10px;
          border-bottom-right-radius: 10px;
-         border: transparent;
-         transition: .3s linear;
+         border: 2px solid transparent;
+         border-top: none;
+         transition: .5s linear;
 
-         &.active,
+         &.active,git 
          &:hover {
             border: 2px solid #00af41;
             border-top: none;
