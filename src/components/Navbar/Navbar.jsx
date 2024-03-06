@@ -5,7 +5,7 @@ import "./navbar.scss";
 const Navbar = ({ headerRef, visibleSection }) => {
 
    return (
-      <div className="nav-box">
+      <header className="header">
          <nav className="nav" >
             <a href="#home" className="nav__logo">
                <img className="nav__logo_img" src={logo} alt="Logo" />
@@ -60,7 +60,7 @@ const Navbar = ({ headerRef, visibleSection }) => {
                </li>
             </ul>
          </nav>
-      </div>
+      </header>
    )
 };
 

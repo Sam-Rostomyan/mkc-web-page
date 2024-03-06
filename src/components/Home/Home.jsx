@@ -8,18 +8,18 @@ import 'swiper/css/navigation';
 import "./home.scss";
 
 import img1 from "../../assets/images/sliderImg1.png"
-import leftArrow from "../../assets/images/headerArrowLeft.svg";
-import rightArrow from "../../assets/images/headerArrowRight.svg";
+import leftArrow from "../../assets/images/homeArrowLeft.svg";
+import rightArrow from "../../assets/images/homeArrowRight.svg";
 
 const Home = ({ inViewRef }) => {
    return (
-      <header className="header" id="home" ref={inViewRef}>
-         <div className="header__slider">
-            <div className="header__slider_controls">
-               <button className="header__slider_controls-leftArrow header__slider_controls-btn">
+      <section className="home" id="home" ref={inViewRef}>
+         <div className="home__slider">
+            <div className="home__slider_controls">
+               <button className="home__slider_controls-leftArrow home__slider_controls-btn">
                   <img src={leftArrow} alt="left arrow" />
                </button>
-               <button className="header__slider_controls-rightArrow header__slider_controls-btn">
+               <button className="home__slider_controls-rightArrow home__slider_controls-btn">
                   <img src={rightArrow} alt="right arrow" />
                </button>
             </div>
@@ -27,8 +27,8 @@ const Home = ({ inViewRef }) => {
             <Swiper
                className="mySwiper"
                navigation={{
-                  nextEl: ".header__slider_controls-rightArrow",
-                  prevEl: ".header__slider_controls-leftArrow"
+                  nextEl: ".home__slider_controls-rightArrow",
+                  prevEl: ".home__slider_controls-leftArrow"
                }}
                modules={[Navigation, Autoplay, Mousewheel]}
                slidesPerView={1}
@@ -40,36 +40,36 @@ const Home = ({ inViewRef }) => {
                   disableOnInteraction: false,
                }}
             >
-               <SwiperSlide className="header__slider_slide">
-                  <div className="header__slider_photo">
-                     <img className="header__slider_img" src={img1} alt="img1" />
+               <SwiperSlide className="home__slider_slide">
+                  <div className="home__slider_photo">
+                     <img className="home__slider_img" src={img1} alt="img1" />
                   </div>
-                  <div className="header__slider_footer">
-                     <p className="header__slider_text">1.Բիզնեսի կառավարման Mobile Հավելված</p>
-                     <CustomLink className="header__slider_link custom-link" to="/scanit">Ավելին</CustomLink>
-                  </div>
-               </SwiperSlide >
-
-               <SwiperSlide className="header__slider_slide">
-                  <div className="header__slider_photo">
-                     <img className="header__slider_img" src={img1} alt="img1" />
-                  </div>
-                  <div className="header__slider_footer">
-                     <p className="header__slider_text">2.Բիզնեսի կառավարման Mobile Հավելված</p>
+                  <div className="home__slider_footer">
+                     <p className="home__slider_text">1.Բիզնեսի կառավարման Mobile Հավելված</p>
+                     <CustomLink className="home__slider_link custom-link" to="/scanit">Ավելին</CustomLink>
                   </div>
                </SwiperSlide >
 
-               <SwiperSlide className="header__slider_slide">
-                  <div className="header__slider_photo">
-                     <img className="header__slider_img" src={img1} alt="img1" />
+               <SwiperSlide className="home__slider_slide">
+                  <div className="home__slider_photo">
+                     <img className="home__slider_img" src={img1} alt="img1" />
                   </div>
-                  <div className="header__slider_footer">
-                     <p className="header__slider_text">3.Բիզնեսի կառավարման Mobile Հավելված</p>
+                  <div className="home__slider_footer">
+                     <p className="home__slider_text">2.Բիզնեսի կառավարման Mobile Հավելված</p>
+                  </div>
+               </SwiperSlide >
+
+               <SwiperSlide className="home__slider_slide">
+                  <div className="home__slider_photo">
+                     <img className="home__slider_img" src={img1} alt="img1" />
+                  </div>
+                  <div className="home__slider_footer">
+                     <p className="home__slider_text">3.Բիզնեսի կառավարման Mobile Հավելված</p>
                   </div>
                </SwiperSlide>
             </Swiper>
          </div>
-      </header>
+      </section>
    )
 };
 
