@@ -11,6 +11,7 @@ import ContactUs from './components/ContactUs/ContactUs';
 
 import Homepage from './pages/Homepage';
 import ScanitPage from './pages/Scanit/ScanitPage';
+import CtrlBPage from './pages/CtrlB/CtrlBPage';
 
 const menus = ["home", "about", "services", "customers", "partners", "contact"];
 const secctions = [Home, About, Services, Customers, Partners, ContactUs]
@@ -36,6 +37,7 @@ function App() {
           <Route path="/" element={<Layout headerRef={headerRef} visibleSection={visibleSection} menus={menus} />}>
             <Route index element={<Homepage secctions={secctions} setInView={setInView} />} />
             <Route path='scanit' element={<ScanitPage />} />
+            <Route path='ctrb' element={<CtrlBPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

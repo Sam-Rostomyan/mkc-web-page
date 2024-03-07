@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "../../styles/tabs.scss";
 import "./scanitpage.scss";
 
 import scanitImg1 from "../../assets/images/scanitImg1.png";
@@ -35,107 +36,111 @@ const ScanitPage = () => {
                 <p className="scanit__logo_text">Բիզնեսի կառավարման Mobile Հավելված</p>
               </div>
 
-              <ul className="scanit__tabs">
+              {/* Tabs start */}
+              <ul className="tabs">
                 <li
-                  className={activeTab === 1 ? "scanit__tabs_tab active" : "scanit__tabs_tab"}
+                  className={activeTab === 1 ? "tabs_tab active" : "tabs_tab"}
                   onClick={() => toggleTab(1)}
                 >
                   Գույքագրում
                 </li>
                 <li
-                  className={activeTab === 2 ? "scanit__tabs_tab active" : "scanit__tabs_tab"}
+                  className={activeTab === 2 ? "tabs_tab active" : "tabs_tab"}
                   onClick={() => toggleTab(2)}
                 >
                   Պահեստի կառավարման ավտոմատացում
                 </li>
                 <li
-                  className={activeTab === 3 ? "scanit__tabs_tab active" : "scanit__tabs_tab"}
+                  className={activeTab === 3 ? "tabs_tab active" : "tabs_tab"}
                   onClick={() => toggleTab(3)}
                 >
                   Արտադրական պրոցեսների ավտոմատացում
                 </li>
                 <li
-                  className={activeTab === 4 ? "scanit__tabs_tab active" : "scanit__tabs_tab"}
+                  className={activeTab === 4 ? "tabs_tab active" : "tabs_tab"}
                   onClick={() => toggleTab(4)}
                 >
                   Վաճառքների կառավարման ավտոմատացում
                 </li>
               </ul>
+              {/* Tabs end */}
 
-              <div className="scanit__content">
-                <div className={activeTab === 1 ? "scanit__content_desc active" : "scanit__content_desc"}>
-                  <h2 className="scanit__content_title">Գույքագրում</h2>
+              {/* Tabs Content start */}
+              <div className="tabs-content">
+                <div className={activeTab === 1 ? "tabs-content__desc active" : "tabs-content__desc"}>
+                  <h2 className="tabs-content__title">Գույքագրում</h2>
 
-                  <ul className="scanit__content_list">
-                    <li className="scanit__content_item scanit__content_list_subtitle">Գույքագրումն հնարավորություն է տալիս</li>
-                    <li className="scanit__content_item">Հիմնական միջոցների/ապրանքների սկանավորում</li>
-                    <li className="scanit__content_item">Քանակական հաշվառում</li>
-                    <li className="scanit__content_item">Պիտակավորում, որն իր մեջ ներառում է հետևյալ տեղեկատվությունը</li>
-                    <li className="scanit__content_subitem">
-                      <ul className="scanit__content_list scanit__content_sublist">
-                        <li className="scanit__content_item">Գույքի անվանում</li>
-                        <li className="scanit__content_item">Գույքային համար</li>
-                        <li className="scanit__content_item">Շտրիխ կոդ</li>
+                  <ul className="tabs-content__list">
+                    <li className="tabs-content__item tabs-content__list_subtitle">Գույքագրումն հնարավորություն է տալիս</li>
+                    <li className="tabs-content__item">Հիմնական միջոցների/ապրանքների սկանավորում</li>
+                    <li className="tabs-content__item">Քանակական հաշվառում</li>
+                    <li className="tabs-content__item">Պիտակավորում, որն իր մեջ ներառում է հետևյալ տեղեկատվությունը</li>
+                    <li className="tabs-content__subitem">
+                      <ul className="tabs-content__list tabs-content__sublist">
+                        <li className="tabs-content__item">Գույքի անվանում</li>
+                        <li className="tabs-content__item">Գույքային համար</li>
+                        <li className="tabs-content__item">Շտրիխ կոդ</li>
                       </ul>
                     </li>
-                    <li className="scanit__content_item">Վերջնական բազայի ձևավորում, համեմատում պատվիրատուի բազայի հետ և անհրաժեշտության դեպքում շտկումների իրականացում</li>
+                    <li className="tabs-content__item">Վերջնական բազայի ձևավորում, համեմատում պատվիրատուի բազայի հետ և անհրաժեշտության դեպքում շտկումների իրականացում</li>
                   </ul>
 
-                  <ul className="scanit__content_list">
-                    <li className="scanit__content_item scanit__content_list_subtitle">Առավելությունները</li>
-                    <li className="scanit__content_item">Վերջնական բազայի ձևավորում, համեմատում պատվիրատուի բազայի հետ և անհրաժեշտության դեպքում շտկումների իրականացում</li>
-                    <li className="scanit__content_item">Գույքագրումը կատարվում է նորագույն տեխնոլոգիայով՝ արագ և արդյունավետ</li>
-                    <li className="scanit__content_item">Աշխատանքների կանոնակարգում, որը հնարավորություն կտա հետագայում հեշտությամբ հետևել նյութական արժեքների քանակության շարժին</li>
+                  <ul className="tabs-content__list">
+                    <li className="tabs-content__item tabs-content__list_subtitle">Առավելությունները</li>
+                    <li className="tabs-content__item">Վերջնական բազայի ձևավորում, համեմատում պատվիրատուի բազայի հետ և անհրաժեշտության դեպքում շտկումների իրականացում</li>
+                    <li className="tabs-content__item">Գույքագրումը կատարվում է նորագույն տեխնոլոգիայով՝ արագ և արդյունավետ</li>
+                    <li className="tabs-content__item">Աշխատանքների կանոնակարգում, որը հնարավորություն կտա հետագայում հեշտությամբ հետևել նյութական արժեքների քանակության շարժին</li>
                   </ul>
 
-                  <p className="scanit__content_text">Կատարված աշխատանքների որակը և բարձր պրոֆեսիոնալիզմն ապահովում է կազմակերպության ավելի քան 9 տարվա փորձն այս ոլորտում։</p>
+                  <p className="tabs-content__text">Կատարված աշխատանքների որակը և բարձր պրոֆեսիոնալիզմն ապահովում է կազմակերպության ավելի քան 9 տարվա փորձն այս ոլորտում։</p>
                 </div>
 
-                <div className={activeTab === 2 ? "scanit__content_desc active" : "scanit__content_desc"}>
-                  <h2 className="scanit__content_title scanit__content_secondary-title">Պահեստի կառավարման ավտոմատացում</h2>
+                <div className={activeTab === 2 ? "tabs-content__desc active" : "tabs-content__desc"}>
+                  <h2 className="tabs-content__title tabs-content__secondary-title">Պահեստի կառավարման ավտոմատացում</h2>
 
-                  <ul className="scanit__content_list scanit__content_secondary-list">
-                    <li className="scanit__content_item scanit__content_list_subtitle scanit__content_list_secondary-subtitle">Համակարգը հնարավորություն է տալիս՝</li>
-                    <li className="scanit__content_item">Պահեստի մուտք</li>
-                    <li className="scanit__content_item">Պահեստի ելք</li>
-                    <li className="scanit__content_item">Ապրանքների տեղաշարժ պահեստների միջև</li>
-                    <li className="scanit__content_item">Բացասական ապրանքների հայտնաբերում</li>
-                    <li className="scanit__content_item">Պահեստների վերջնական մնացորդների ձևավորում</li>
-                    <li className="scanit__content_item">Շրջանառության դիտում</li>
-                    <li className="scanit__content_item">Պրոցեսների ինտեգրում դեպի ՀԾ համակարգ և հակառակը</li>
+                  <ul className="tabs-content__list tabs-content__secondary-list">
+                    <li className="tabs-content__item tabs-content__list_subtitle tabs-content__list_secondary-subtitle">Համակարգը հնարավորություն է տալիս՝</li>
+                    <li className="tabs-content__item">Պահեստի մուտք</li>
+                    <li className="tabs-content__item">Պահեստի ելք</li>
+                    <li className="tabs-content__item">Ապրանքների տեղաշարժ պահեստների միջև</li>
+                    <li className="tabs-content__item">Բացասական ապրանքների հայտնաբերում</li>
+                    <li className="tabs-content__item">Պահեստների վերջնական մնացորդների ձևավորում</li>
+                    <li className="tabs-content__item">Շրջանառության դիտում</li>
+                    <li className="tabs-content__item">Պրոցեսների ինտեգրում դեպի ՀԾ համակարգ և հակառակը</li>
                   </ul>
                 </div>
-                <div className={activeTab === 3 ? "scanit__content_desc active" : "scanit__content_desc"}>
-                  <h2 className="scanit__content_title scanit__content_secondary-title"> Արտադրական պրոցեսների ավտոմատացում</h2>
+                <div className={activeTab === 3 ? "tabs-content__desc active" : "tabs-content__desc"}>
+                  <h2 className="tabs-content__title tabs-content__secondary-title"> Արտադրական պրոցեսների ավտոմատացում</h2>
 
-                  <ul className="scanit__content_list scanit__content_secondary-list">
-                    <li className="scanit__content_item scanit__content_list_subtitle">ScanIT համակարգն հնարավորություն է տալիս ավտոմատացնել արտադրական պրոցեսները,Մասնավորապես՝</li>
-                    <li className="scanit__content_item">Արտադրանքի քանակի պլանավորում</li>
-                    <li className="scanit__content_item">Արտադրանքի թողարկման գրանցում</li>
-                    <li className="scanit__content_item">Արտադրանքի պիտակավորում(կոդավորում)</li>
-                    <li className="scanit__content_item">Թողարկված արտադրանքի քանակի համեմատում պլանավորված քանակի հետ</li>
-                    <li className="scanit__content_item">Խոտանի գրանցում</li>
-                    <li className="scanit__content_item">Արտադրանքի տեղաշարժի գրանցում</li>
-                    <li className="scanit__content_item">Պահեստների մնացորդների արտացոլում</li>
-                    <li className="scanit__content_item">Պահեստների շրջանառության արտացոլում</li>
-                    <li className="scanit__content_item">Անհրաժեշտ պրոցեսների ինտեգրում դեպի ՀԾ համակարգ և հակառակը</li>
+                  <ul className="tabs-content__list tabs-content__secondary-list">
+                    <li className="tabs-content__item tabs-content__list_subtitle">ScanIT համակարգն հնարավորություն է տալիս ավտոմատացնել արտադրական պրոցեսները,Մասնավորապես՝</li>
+                    <li className="tabs-content__item">Արտադրանքի քանակի պլանավորում</li>
+                    <li className="tabs-content__item">Արտադրանքի թողարկման գրանցում</li>
+                    <li className="tabs-content__item">Արտադրանքի պիտակավորում(կոդավորում)</li>
+                    <li className="tabs-content__item">Թողարկված արտադրանքի քանակի համեմատում պլանավորված քանակի հետ</li>
+                    <li className="tabs-content__item">Խոտանի գրանցում</li>
+                    <li className="tabs-content__item">Արտադրանքի տեղաշարժի գրանցում</li>
+                    <li className="tabs-content__item">Պահեստների մնացորդների արտացոլում</li>
+                    <li className="tabs-content__item">Պահեստների շրջանառության արտացոլում</li>
+                    <li className="tabs-content__item">Անհրաժեշտ պրոցեսների ինտեգրում դեպի ՀԾ համակարգ և հակառակը</li>
                   </ul>
                 </div>
-                <div className={activeTab === 4 ? "scanit__content_desc active" : "scanit__content_desc"}>
-                  <h2 className="scanit__content_title scanit__content_secondary-title">Վաճառքների կառավարման ավտոմատացում</h2>
+                <div className={activeTab === 4 ? "tabs-content__desc active" : "tabs-content__desc"}>
+                  <h2 className="tabs-content__title tabs-content__secondary-title">Վաճառքների կառավարման ավտոմատացում</h2>
 
-                  <ul className="scanit__content_list scanit__content_secondary-list">
-                    <li className="scanit__content_item scanit__content_list_subtitle scanit__content_list_secondary-subtitle">Համակարգը նախատեսված է վաճառքների պրոցեսների ավտոմատացման համար</li>
-                    <li className="scanit__content_item scanit__content_list_subtitle">Համակարգը հնարավորություն է տալիս</li>
-                    <li className="scanit__content_item">Վաճառքի պատվերի գրանցում</li>
-                    <li className="scanit__content_item">Վաճառքի մենեջերի ընտրություն</li>
-                    <li className="scanit__content_item">Հաճախորդի ընտրություն</li>
-                    <li className="scanit__content_item">Վաճառվող ապրանքների անվանացանկի ձևավորում</li>
-                    <li className="scanit__content_item">Ստեղծված վաճառքի պատվերի խմբագրում, հեռացում, կարգավիճակի փոփոխում</li>
-                    <li className="scanit__content_item">Գործընթացների ինտեգրում դեպի ՀԾ համակարգ և հակառակը։</li>
+                  <ul className="tabs-content__list tabs-content__secondary-list">
+                    <li className="tabs-content__item tabs-content__list_subtitle tabs-content__list_secondary-subtitle">Համակարգը նախատեսված է վաճառքների պրոցեսների ավտոմատացման համար</li>
+                    <li className="tabs-content__item tabs-content__list_subtitle">Համակարգը հնարավորություն է տալիս</li>
+                    <li className="tabs-content__item">Վաճառքի պատվերի գրանցում</li>
+                    <li className="tabs-content__item">Վաճառքի մենեջերի ընտրություն</li>
+                    <li className="tabs-content__item">Հաճախորդի ընտրություն</li>
+                    <li className="tabs-content__item">Վաճառվող ապրանքների անվանացանկի ձևավորում</li>
+                    <li className="tabs-content__item">Ստեղծված վաճառքի պատվերի խմբագրում, հեռացում, կարգավիճակի փոփոխում</li>
+                    <li className="tabs-content__item">Գործընթացների ինտեգրում դեպի ՀԾ համակարգ և հակառակը։</li>
                   </ul>
                 </div>
               </div>
+              {/* Tabs Content end */}
             </div>
           </div>
         </div>

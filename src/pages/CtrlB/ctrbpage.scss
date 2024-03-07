@@ -1,0 +1,133 @@
+.ctrlb {
+   padding-top: 27px;
+
+   &__container {
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 22px;
+   }
+
+   &__wrapper {
+      display: flex;
+      column-gap: 27px;
+   }
+
+   &__photos {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 13px;
+
+      &_box {
+         & img {
+            height: 100%;
+            display: block;
+         }
+      }
+
+      &_box:nth-child(1) {
+         position: relative;
+
+         &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -246px;
+            background-image: url("../../assets/images/borderDashed1.png");
+            background-repeat: no-repeat;
+            width: 241px;
+            height: 218px;
+         }
+      }
+
+      &_box:nth-child(2) {
+         margin-left: 159px;
+      }
+
+      &_box:nth-child(3) {
+         margin-left: 331px;
+         position: relative;
+
+         &::before {
+            content: '';
+            position: absolute;
+            bottom: 50%;
+            left: -244px;
+            background-image: url("../../assets/images/borderDashed2.png");
+            background-repeat: no-repeat;
+            width: 251px;
+            height: 218px;
+         }
+      }
+   }
+
+   &__goBack {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+   }
+
+   &__info {
+      width: 100%;
+
+      &_content {
+         display: flex;
+         justify-content: space-between;
+         gap: 30px;
+      }
+   }
+
+   &__logo {
+      max-width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &_img {
+         width: 100%;
+         max-width: 185px;
+         display: block;
+      }
+
+      &_text {
+         font-weight: 700;
+         font-size: 10px;
+         color: rgba(0, 0, 0, 0.8);
+      }
+   }
+
+   // ##### ctrlB Tabs #####
+   &__tabs {
+      padding: 27px 0 32px;
+      row-gap: 23px;
+   }
+
+   &__list {
+      row-gap: 0;
+
+      & li {
+         font-size: 16px;
+         line-height: 156%;
+      }
+   }
+
+   &__text {
+      font-size: 16px;
+   }
+
+   &__content-title {
+      padding-bottom: 10px;
+   }
+
+   &__content_desc {
+      row-gap: 0;
+   }
+
+   &__content_text {
+      font-size: 16px;
+      line-height: 156%;
+      padding-bottom: 8px;
+   }
+}
