@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.css": "/mkc-web-page/static/css/main.d44bd2ac.css",
-    "main.js": "/mkc-web-page/static/js/main.b3913f63.js",
-    "static/media/sliderImg1.png": "/mkc-web-page/static/media/sliderImg1.aad026e9827045c34195.png",
+    "main.css": "/mkc-web-page/static/css/main.4b7bafe9.css",
+    "main.js": "/mkc-web-page/static/js/main.1fdd5920.js",
+    "static/media/homeSliderImg2.png": "/mkc-web-page/static/media/homeSliderImg2.eeabf025342614883c8f.png",
+    "static/media/ctrlbImg3.png": "/mkc-web-page/static/media/ctrlbImg3.c9a2a6593045323921c6.png",
+    "static/media/homeSliderImg1.png": "/mkc-web-page/static/media/homeSliderImg1.aad026e9827045c34195.png",
     "static/media/scanitImg2.png": "/mkc-web-page/static/media/scanitImg2.8efe4c65f37f6a7de6da.png",
+    "static/media/ctrlbImg1.png": "/mkc-web-page/static/media/ctrlbImg1.d39f22794cfaeee975e0.png",
     "static/media/scanitImg1.png": "/mkc-web-page/static/media/scanitImg1.a9ad24ca8b274bfb3bcf.png",
+    "static/media/ctrlbImg2.png": "/mkc-web-page/static/media/ctrlbImg2.d775cd58a9f769afa792.png",
     "static/media/scanitImg3.png": "/mkc-web-page/static/media/scanitImg3.d512b5488f3a7a444420.png",
+    "static/media/ctrlbLogo.png": "/mkc-web-page/static/media/ctrlbLogo.46cc1abff0d7f74cf6f9.png",
     "static/media/logo.svg": "/mkc-web-page/static/media/logo.ffccd5f40ecba61fd6010e5280029db8.svg",
     "static/media/navBorder.svg": "/mkc-web-page/static/media/navBorder.a2b6830677a324a51e57.svg",
     "index.html": "/mkc-web-page/index.html",
     "static/media/homeArrowLeft.svg": "/mkc-web-page/static/media/homeArrowLeft.c5b1dc76bc7b13e9f91cd9eb75f2a7b4.svg",
     "static/media/homeArrowRight.svg": "/mkc-web-page/static/media/homeArrowRight.f79597440e08343fcc39033df2e5e82d.svg",
-    "main.d44bd2ac.css.map": "/mkc-web-page/static/css/main.d44bd2ac.css.map",
-    "main.b3913f63.js.map": "/mkc-web-page/static/js/main.b3913f63.js.map"
+    "main.4b7bafe9.css.map": "/mkc-web-page/static/css/main.4b7bafe9.css.map",
+    "main.1fdd5920.js.map": "/mkc-web-page/static/js/main.1fdd5920.js.map"
   },
   "entrypoints": [
-    "static/css/main.d44bd2ac.css",
-    "static/js/main.b3913f63.js"
+    "static/css/main.4b7bafe9.css",
+    "static/js/main.1fdd5920.js"
   ]
 }
